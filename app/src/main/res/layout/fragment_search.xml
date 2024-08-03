@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/cr"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Search For your Favouraite Tutor"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/edittextshape"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="20dp"
+        app:endIconDrawable="@drawable/baseline_arrow_drop_down_24"
+        app:endIconTint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv9"
+        app:layout_editor_absoluteX="16dp">
+            <AutoCompleteTextView
+                android:id="@+id/listOfTutors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/cr"
+                android:inputType="none"
+                android:text="Choose Tutor"
+                android:textAllCaps="false"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/mustard_button"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="305dp"
+        android:layout_height="359dp"
+        android:src="@drawable/ead"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
